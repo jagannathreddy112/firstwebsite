@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./position.css">
+    <style>
+        body{
+    font: calibri,sans-serifs;
+}
+div{
+    background-color: grey;
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px grey;
+    display:flex;
+}
+input,textarea,select{
+    border: none;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.button{
+    background-color: black;
+    color: white;
+}
+.forms{
+    display: inline-block;
+}
+    </style>
+    <script>
+        function one(){
+           let data= document.getElementById("abc").value;
+
+           document.getElementById("cdd").innerHTML=data;
+         }
+    </script>
+   
+</head>
+<body>
+    <!--Job Enrollment -->
+    <h2>Job Enrollment </h2>
+    <div class="forms">
+        <form>
+            <label for="UserName">UserName</label><br>
+            <input type="text" id="bca" placeholder="UserName"><br>
+
+            <label for="Password">Password</label><br>
+            <input type="Password" placeholder="Password"><br>
+
+            <label for="Email">Email</label><br>
+            <input type="email" placeholder="Email"><br>
+
+            <label for="About Yourself">About Yourself</label><br>
+            <textarea name="Bio" id="abc" cols="30" rows="3">Bio</textarea><br>
+
+            <label for="Designation">Designation</label><br>
+            <select>
+                <option value="software engineer">software engineer</option>
+                <option value="Sr software engineer">Sr software engineer</option>
+                <option value="Tech lead">Tech lead</option>
+                <option value="Devoloper">Devoloper</option>
+            </select><br>
+
+            <label for="DOB">DOB</label><br>
+            <input type="Date"><br>
+
+            <label for="Your image">Your image</label><br>
+            <input type="File"><br>
+
+            <label for="Mobile Number">Mobile Number</label><br>
+            <input type="Number"><br>
+
+            <label for="Programming Level">Programming level</label><br>
+            <input type="checkbox" value="Beginner">Beginner
+            <input type="checkbox" value="Intermediate">Intermediate
+            <input type="checkbox" value="Professional">Professional <br>
+
+            <label for="Exprties in">Experties in</label><br>
+            <input type="radio" value="Backend">Backend
+            <input type="radio" value="Front end">Front end
+            <input type="radio" value="Full stack">Full stack <br>
+            
+            
+
+
+            <label for="Website Url">Website Url</label><br>
+            <input type="Url" placeholder="Your Website"><br>
+            <input  type="button" onclick="one()" value="Enroll">
+            <input class="button" type="Reset" value="Reset">
+
+        </form>
+    </div>
+
+    <div class="forms">
+        <textarea id="cdd"></textarea>
+</html>
